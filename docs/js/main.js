@@ -1,14 +1,14 @@
 let table = document.querySelector("#customers");
 let rows = table.rows;
 for (let i = 0; i < rows.length; i++) {
-  if (table.rows[i].innerHTML.includes("Germany") === true) {
+  if (table.rows[i].innerHTML.includes("Germany")) {
     rows[i].style.backgroundColor = "#ffff00";
     rows[i].style.fontWeight = "bold";
-  } else if (table.rows[i].innerHTML.includes("Sweden") === true) {
+  } else if (table.rows[i].innerHTML.includes("Sweden")) {
     rows[i].style.color = "#4682B4";
-  } else if (table.rows[i].innerHTML.includes("UK") === true) {
+  } else if (table.rows[i].innerHTML.includes("UK")) {
     rows[i].style.fontStyle = "italic";
-  } else if (table.rows[i].innerHTML.includes("Italy") === true) {
+  } else if (table.rows[i].innerHTML.includes("Italy")) {
     rows[i].hidden = true;
   }
 }
